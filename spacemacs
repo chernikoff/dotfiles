@@ -31,6 +31,7 @@ values."
    ;; List of configuraton layers to load.
    dotspacemacs-configuration-layers
    '(
+     yaml
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
@@ -53,8 +54,12 @@ values."
      semantic
      bibtex
      (c-c++ :variables
-            c-c++-default-mode-for-headers 'c++mode
+            c-c++-default-mode-for-headers 'c++-mode
             c-c++-enable-clang-support t
+            c-c++-enable-cmake-ide-support t
+            c-c++-enable-google-style t
+            c-c++-enable-google-newline t
+            c-c++-enable-rtags-support t
             )
      graphviz
      html
