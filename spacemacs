@@ -56,10 +56,12 @@ values."
      (c-c++ :variables
             c-c++-default-mode-for-headers 'c++-mode
             c-c++-enable-clang-support t
-            c-c++-enable-cmake-ide-support t
             c-c++-enable-google-style t
             c-c++-enable-google-newline t
             c-c++-enable-rtags-support t
+            )
+     (cmake :variables
+            cmake-enable-cmake-ide-support t
             )
      graphviz
      html
