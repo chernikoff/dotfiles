@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/chernikoff/.oh-my-zsh
+  export ZSH=$HOME/.oh-my-zsh
   export TERM="xterm-256color"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -52,7 +52,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git archlinux branch colorize man gnu-utils gitignore zsh-autosuggestions)
+plugins=(git archlinux branch colorize man gnu-utils gitignore zsh-autosuggestions svn)
 
 source $ZSH/oh-my-zsh.sh
 
