@@ -45,7 +45,6 @@ This function should only modify configuration layer settings."
      (auto-completion :variables
                       auto-completion-enable-help-tooltip t)
      better-defaults
-     emacs-lisp
      git
      markdown
      org
@@ -62,17 +61,18 @@ This function should only modify configuration layer settings."
      semantic
      bibtex
      (lsp :variables
-           lsp-remap-xref-keybindings t
+           lsp-ui-remap-xref-keybindings t
            )
      (c-c++ :variables
+            c-c++-enable-clang-format-on-save t
             c-c++-default-mode-for-headers 'c++-mode
             c-c++-enable-google-style t
             c-c++-enable-google-newline t
             c-c++-adopt-subprojects t
-;            c-c++-backend 'lsp-ccls
-;            c-c++-lsp-executable (file-truename "~/.local/bin/ccls")
-            c-c++-backend 'lsp-cquery
-            c-c++-lsp-executable (file-truename "~/.local/bin/cquery")
+            c-c++-backend 'lsp-ccls
+            c-c++-lsp-executable (file-truename "~/.local/bin/ccls")
+;            c-c++-backend 'lsp-cquery
+;            c-c++-lsp-executable (file-truename "~/.local/bin/cquery")
             c-c++-lsp-sem-highlight-method 'font-lock
 ;            c-c++-lsp-sem-highlight-method 'overlay
             c-c++-lsp-sem-highlight-rainbow t
